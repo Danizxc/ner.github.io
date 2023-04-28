@@ -1,0 +1,63 @@
+dialog {
+	width: 150px; 
+	height:75px;
+	text-align: center;
+	box-shadow: 0 0 1px;
+	border-radius: 5px;
+    margin-left: 10px;
+}
+
+dialog{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#closeDialog{
+	margin-top: 10px;
+	border: none;
+	color: #FB565A;
+background-color: #fff;
+    border-radius: 10px;
+    transition: 0.3s 0.1s;
+}
+
+#openDialog{
+	border: none;
+	background-color: #fff;
+	color: #FB565A;
+	
+}
+
+#closeDialog2{
+	margin-top: 10px;
+	border: none;
+	color: #FB565A;
+	background-color: #fff;
+}
+
+#openDialog2{
+	border: none;
+	background-color: #0000003b;
+	color: #ffffff;
+	
+}
+
+#openDialog2:hover{
+	color:#FB565A;
+	background-color: #fff;
+	
+}
+
+.dialog2 {
+	width: 150px; 
+	height:75px;
+	text-align: center;
+	box-shadow: 0 0 1px;
+	border-radius: 5px;
+    margin-left: 10px;
+}
+
+.dialog2{
+	font-size: 14px;
+	line-height: 20px;
+}

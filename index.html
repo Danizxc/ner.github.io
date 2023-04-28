@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парфюм магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="otziv.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+  
+    <nav>
+        <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+        <label class="m-menu__toggle" for="menu">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </label>
+        <label class="m-menu__overlay" for="menu"></label>
+      
+        <div class="m-menu">
+          <div class="m-menu__header">
+            <label class="m-menu__toggle" for="menu">
+              <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </label>
+            <span>Меню</span>
+          </div>
+          <ul>
+            <li><label>Каталог</label></li>
+            <li>
+              <label class="a-label__chevron" for="item-2">Парфюмы</label>
+              <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+              <div class="m-menu">
+                <div class="m-menu__header">
+                  <label class="m-menu__toggle" for="item-2">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                      <path d="M19 12H6M12 5l-7 7 7 7"/>
+                    </svg>
+                  </label>
+                  <span>Парфюмы</span>
+                </div>
+                <ul>
+                  <li><label>Мужские</label></li>
+                  <li><label>Женские</label></li>
+                  <li>              
+                  </li>
+                  <li><label>Универсальные</label></li>
+
+              </div>
+            </li>
+            <li><label></label></li>
+            <li><label>Поддержка</label></li>
+            <li><label>Связь</label></li>
+            <li><label> Подписка на рассылку
+              <br>
+              <input type="text" name="email" placeholder="Почта">
+              <br>
+                   <button id="openDialog" type="submit" >Подписаться</button>
+                   <dialog>
+                    <p>Спасибо за подписку!</p>
+                    <p><button id="closeDialog">Закрыть окно</button></p>
+                      </dialog>
+                      <script>
+                    var dialog = document.querySelector('dialog');
+                    document.querySelector('#openDialog').onclick = function() {
+                     dialog.show(); // Показываем диалоговое окно
+                    }
+                    document.querySelector('#closeDialog').onclick = function() {
+                     dialog.close(); // Прячем диалоговое окно
+                    }
+                    
+                      </script></label></li>
+          </ul>  
+        </div>
+      </nav>
+    </div>
+    
+
+
+
+
+  
+       <div class="slider container">
+        <div class="slider-title">
+            <h2>Самые изысканные ароматы.</h2>
+            <p>Намного больше, чем парфюм.</p>
+            <a href="#" class="btn btn-slider">Узнать больше</a>
+        </div>
+        <img src="img/slide1.jpg" alt="slider-img" class="slide_img">
+    </div>
+
+   
+
+    <div class="list">
+        <li data-color=".All">Все</li>
+        <li data-color=".featured">Новинки</li>
+        <li data-color=".Special">Акции</li>
+    </div>
+
+    <div class="advantages container">
+        <div class="advantages-cards ">
+            <div class="advantages-card All Special">
+                <img  class="card-img" src="img/pr1.jpg" alt="img">
+                <h3>ESSENTIAL PARFUMS PARIS</h3>
+                <p class="text_pr">5 400 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Special</article>
+            </div>
+            <div class="advantages-card All featured">
+                <img  class="card-img" src="img/pr2.jpg" alt="img">
+                <h3>CHOPARD PARFUMS MOSCOW</h3>
+                <p class="text_pr">10 900 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Featured</article>
+            </div>
+            <div class="advantages-card All Special">
+                <img  class="card-img" src="img/pr3.jpg" alt="img">
+                <h3>MONTALE PARFUMS LONDON</h3>
+                <p class="text_pr">6 000 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Special</article>
+            </div>       
+            <div class="advantages-card All featured">
+                <img  class="card-img" src="img/pr4.jpg" alt="img">
+                <h3>VERSACE QUBAY ARGENTINA</h3>
+                <p class="text_pr">5 400 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Featured</article>
+            </div>
+            <div class="advantages-card All Special">
+                <img  class="card-img" src="img/pr5.jpg" alt="img">
+                <h3>DOLCE&GABBANA BRAZIL</h3>
+                <p class="text_pr">10 900 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Special</article>
+            </div>
+            <div class="advantages-card All Special">
+                <img  class="card-img" src="img/pr6.jpg" alt="img">
+                <h3>CHOPARD FORMITY JAPAN</h3>
+                <p class="text_pr">6 000 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Special</article>
+            </div>       
+            <div class="advantages-card All featured">
+                <img  class="card-img" src="img/pr7.jpg" alt="img">
+                <h3>ESSENTIAL PARFUMS PARIS</h3>
+                <p class="text_pr">5 400 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Featured</article>
+            </div>
+            <div class="advantages-card All Special">
+                <img  class="card-img" src="img/pr9.jpg" alt="img">
+                <h3>CHOPARD PARFUMS MOSCOW</h3>
+                <p class="text_pr">10 900 ₽</p>
+                <a href="#" class="btn btn-card red">Заказать</a>
+                <article>Category: Special</article>
+            </div> 
+            <div class="advantages-card All Special">
+              <img  class="card-img" src="img/pr1.jpg" alt="img">
+              <h3>ESSENTIAL PARFUMS PARIS</h3>
+              <p class="text_pr">10 900 ₽</p>
+              <a href="#" class="btn btn-card red">Заказать</a>
+              <article>Category: Special</article>
+          </div>      
+        </div>
+    </div>
+
+
+
+    <div class="gallery container">
+        <div><img src="./img/pr4.jpg" alt=""></div>
+        <div><img src="./img/pr7.jpg" alt=""></div>
+        <div><img src="./img/pr2.jpg" alt=""></div>
+        <div><img src="./img/pr4.jpg" alt=""></div>
+        <div><img src="./img/pr9.jpg" alt=""></div>
+        <div><img src="./img/pr6.jpg" alt=""></div>
+        <div><img src="./img/pr1.jpg" alt=""></div>
+        <div><img src="./img/pr3.jpg" alt=""></div>
+        <div><img src="./img/pr4.jpg" alt=""></div>
+    </div>
+
+
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    
+    <div class="vospominan">
+      <div class="karusetulava">
+      
+    
+      <div>
+      <figure class="testimonial">
+      <blockquote>Сегодня получила посылочку. Долго сомневалась, так как не люблю предоплату, но сомнения были напрасны. Всё пришло в целости и сохранности, аромат именно тот, который и хотела, и как всегда подарочек. Огромное спасибо, за честность , оперативность, и маленькие радости! Всех вам благ, так держать!
+      <div class="btn"></div>
+      </blockquote>
+      <img src="./img/otziv1.jpeg" alt="Ключевое слово" />
+      <div class="peopl">
+      <h3>Shaan</h3>
+      <p class="indentity">Веб-разработчик</p>
+      </div>
+      </figure>
+      </div>
+    
+      <div>
+      <figure class="testimonial">
+      <blockquote>Сегодня получила посылочку. Долго сомневалась, так как не люблю предоплату, но сомнения были напрасны. Всё пришло в целости и сохранности, аромат именно тот, который и хотела, и как всегда подарочек. Огромное спасибо, за честность , оперативность, и маленькие радости! Всех вам благ, так держать!  
+      <div class="btn"></div>
+      </blockquote>
+      <img src="./img/otziv2.jpg" alt="" />
+      <div class="peopl">
+      <h3>Brian Dean</h3>
+      <p class="indentity">SEO блогер</p>
+      </div>
+      </figure>
+      </div>
+    
+      <div>
+      <figure class="testimonial">
+      <blockquote>Как правило, нано-влияющие имеют ограниченный охват, но высокий уровень вовлеченности и очень доступны для брендов. С другой стороны, знаменитости имеют огромный охват, но их уровень вовлеченности довольно низок. Вы также должны иметь гораздо больший бюджет, чтобы сотрудничать с ними.  
+      <div class="btn"></div>
+      </blockquote>
+      <img src="./img/otziv3.jpg" alt="Maksim Goffin" />
+      <div class="peopl">
+      <h3>Стефан Сагмайстер</h3>
+      <p class="indentity">Графический дизайнер</p>
+      </div>
+      </figure>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+          <img src="./img/logo333.png" alt="">
+          <p class="footer-links">
+            <a href="#">Домой</a> ·
+            <a href="#">Каталог</a> ·
+            <a href="#">Связь</a> ·
+            <a href="#">Отзывы</a> ·
+            <a href="#">FAQ</a> ·
+            <a href="#">Контакты</a>
+          </p>
+          <p class="footer-company-name">Perfume © 2023</p>
+          <div class="footer-icons"></div>
+        </div>
+        <div class="footer-right">
+          <p>Связь</p>
+          <form action="#" method="post">
+            <input type="text" name="email" placeholder="Почта">
+            <textarea name="message" placeholder="Сообщение"></textarea>
+            <button id="openDialog1">Отправить</button>
+            <dialog class="dialog2">
+              <p>Спасибо за подписку!</p>
+              <p><button id="closeDialog1"  type="submit">Закрыть окно</button></p>
+                </dialog>
+              </form>
+            <script>
+              var dialog2 = document.querySelector('dialog2');
+              document.querySelector('#openDialog2').onclick = function() {
+               dialog2.show(); // Показываем диалоговое окно
+              }
+              document.querySelector('#closeDialog2').onclick = function() {
+               dialog2.close(); // Прячем диалоговое окно
+              }
+              
+                </script>
+    
+          
+    
+        </div>
+    
+      </footer>  <footer class="footer-distributed">
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
